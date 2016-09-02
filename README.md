@@ -15,7 +15,7 @@ CORS Filter handle both simple and preflight request.
 
 First of all install SiestaContrib:
 
-    go get -u github.com/vpxyz/siestacontrib
+    go get -u github.com/vpxyz/siestacontrib/...
 
 Now you can combine your handlers with the cors filter:
 
