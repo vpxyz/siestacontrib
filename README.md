@@ -40,7 +40,7 @@ func main() {
 
     corsFilter := cors.New(
 		"http://*.example.com ,http://*.edu", // origins 
-        cors.DefaultAllowMethods + "," + http.MethodOptions + "," + http.MethodPut, // put here your allowed methods
+        cors.DefaultAllowMethods + "," + http.MethodPut, // put here your allowed methods
 		cors.DefaultAllowHeaders+",X-Custom-Header", // allowed headers
 		3000,
 		"X-Custom-Header", // exposer headers

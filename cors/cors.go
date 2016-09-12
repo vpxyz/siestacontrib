@@ -14,7 +14,7 @@ const (
 	DefaultAllowOrigins = "*"
 
 	// DefaultAllowMethods default method allowed
-	DefaultAllowMethods = http.MethodGet + "," + http.MethodPost + "," + http.MethodHead
+	DefaultAllowMethods = http.MethodGet + "," + http.MethodPost + "," + http.MethodHead + "," + http.MethodOptions
 
 	// DefaultAllowOrigins default allowed origins
 	DefaultAllowHeaders = "Origin,Accept,Content-Type,Accept-Language,Content-Language,Last-Event-ID" //default settings for cors
