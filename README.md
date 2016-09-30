@@ -1,5 +1,6 @@
 SiestaContrib: Middleware for VividCortex Siesta
 =================
+[![Go Report Card](https://goreportcard.com/badge/github.com/vpxyz/siestacontrib)](https://goreportcard.com/report/github.com/vpxyz/siestacontrib)
 
 SiestaContrib contains some simple middleware for VividCortex Siesta. 
 
