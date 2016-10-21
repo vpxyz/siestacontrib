@@ -163,6 +163,7 @@ func (cors *Cors) String() string {
 	return s
 }
 
+// isOriginAllowed return true if the origin is allowed
 func (cors *Cors) isOriginAllowed(origin string) bool {
 
 	if cors.allowAllOrigins {
@@ -203,6 +204,7 @@ func (cors *Cors) isHeaderAllowed(header string) bool {
 	return false
 }
 
+// areReqHeadersAllowed return true if the request headers are allowed
 func (cors *Cors) areReqHeadersAllowed(reqHeaders string) bool {
 	if len(reqHeaders) == 0 {
 		return true
@@ -261,7 +263,7 @@ func (cors *Cors) preFlightRequest(c siesta.Context, w http.ResponseWriter, r *h
 		w.Header().Set(AccessControlControlMaxAge, cors.maxAge)
 	}
 
-	// ok, now exit the chai with status HTTP 200
+	// ok, now exit the chain with status HTTP 200
 	w.WriteHeader(http.StatusOK)
 	quit()
 }
